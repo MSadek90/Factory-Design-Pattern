@@ -23,7 +23,7 @@ public class RegisterAPI {
     public void getLoginPage(){
 
        Response response = given()
-                .baseUri("https://masra.neop.co/company/auth").
+                .baseUri("******************").
         when()
                 .get("/login")
 
@@ -39,11 +39,11 @@ public class RegisterAPI {
     public Response registerWithAPI() {
 
         HashMap<String,String> map = new HashMap<>();
-        map.put("email","sacapedit@sacap.com");
-        map.put("password","Neop2020!");
+        map.put("email","**************");
+        map.put("password","************");
 
         Response response = (Response) given()
-                .baseUri("https://masra.neop.co/api/company/v1")
+                .baseUri("https:**************")
                 .body(map)
                 .header("Accept","application/json")
                 .header("Content-Type","application/json")
